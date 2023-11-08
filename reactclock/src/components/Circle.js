@@ -12,12 +12,12 @@ const Circle = (props) => {
                     r="70" 
                     cx='100' 
                     cy='100' 
-                    fill='transparent'
+                    fill='#f9c6cc'
                     stroke='currentColor'
                     strokeWidth='1rem'
                     strokeDasharray={439.8}
                     strokeDashoffset={0}
-                    className='text-gray-100'
+                    className='text-gray-200'
                 ></circle>
                 <circle
                     r="70" 

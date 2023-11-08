@@ -30,15 +30,17 @@ const Clock = () => {
         } , 1000);
     },[])
   return (
-    <div className='flex h-[100vh] items-center justify-center bg-white'>
-      <div className='flex'>
-        <Circle val={hour} hour={true}/>
-        <Circle val={minute} hour={false}/>
-        <Circle val={second} hour={false}/>
-      </div>
-      <div>
-        <div className= {`font-bold ${pm? "opacity-20" : ""}`}>AM</div>
-        <div className= {`font-bold ${pm? "" : "opacity-20"}`}>PM</div>
+    <div className='flex h-[100vh] items-center justify-center bg-[#f9c6cc]'>
+      <div className='flex p-10 rounded-3xl bg-[#181918] shadow-2xl'>
+        <div className='flex'>
+          <Circle val={hour} hour={true}/>
+          <Circle val={minute} hour={false}/>
+          <Circle val={second} hour={false}/>
+        </div>
+        <div>
+          <div className= {`font-bold text-[white] ${pm? "opacity-20" : ""}`}>AM</div>
+          <div className= {`font-bold text-[white] ${pm? "" : "opacity-20"}`}>PM</div>
+        </div>
       </div>
     </div>
   )
